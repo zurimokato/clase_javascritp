@@ -201,4 +201,69 @@ console.log(total);
     }
  */
 
-    
+    // var vs let vs const
+/*
+    var edad=10;
+    var edad_2=20;*/
+
+    let edad2=10;
+    edad2=20;
+
+    const edades=[10,20,30];
+
+    edades.push(70);
+    console.log(edades);
+
+
+    const persona={
+        nombre:"Jhoan",
+        apellidos:"Olivo",
+        edad:27
+    }
+
+    persona.apellidos='Barrios';
+    persona.edad=28;
+
+    console.log(persona);
+
+
+    function sumar(num_uno, num_dos){
+        console.log(num_uno+num_dos);
+    }
+
+    sumar(4,5);
+
+
+    const sum2=(num_uno, num_dos)=>{
+        console.log(num_uno+num_dos);
+    }
+
+
+    sum2(4,5);
+
+
+    const saludar=()=>{
+        console.log('Hola Mundo');
+    }
+
+    const cuadrado =base=>{
+        console.log(base**cuadrado);
+    }
+
+    const sumar_dos=(num_uno, num_dos)=>{
+            return num_uno+num_dos;
+    }
+
+
+    const potencia= (base, altura)=>`El resultado de la porencia es ${base**altura}`;
+
+
+    const mascota={
+        nombre:'Tom',
+        edad:5,
+        vivo:true,
+        razas:['Pastor Alemán','Pitbul']
+    }
+
+    console.log(mascota.nombre);
+    const {edad,vivo}=mascota
